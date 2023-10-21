@@ -1,0 +1,12 @@
+version: '3.0'
+name: trilha-api-desafio
+services:
+  aspnet-api-mssql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: aspnet-api-mssql-server
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: Senha#1234
+      MSSQL_PID: Express
+    ports:
+      - 1434:1433
