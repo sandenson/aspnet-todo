@@ -1,3 +1,6 @@
+# Alternativa: rodar o seguinte comando com a CLI do Docker:
+# docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Senha#1234" -e "MSSQL_PID=Express" -p 1434:1433 -d mcr.microsoft.com/mssql/server:2022-latest 
+
 version: '3.0'
 name: trilha-api-desafio
 services:
